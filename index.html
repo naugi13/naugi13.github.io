@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+ <head >
+            <title>TicTacToe</title>
+            <meta charset="UTF-8" />
+            <meta name="viewport content="width=de-vice-width, initial-scale="1.0">
+            <link href="stylesheet.css" rel="stylesheet">
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <link rel="preconnect" href="hppts://fonts.gstatic.com">
+            <link rel="stylesheet" href=link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap">
+</head>
+
+<body>
+         <h1>TicTacToe</h1>
+        <div class="container">
+            <div class="centered" id="icon">
+                <img src="img/shrek-3-2.jpg" height="110px" alt="">
+            </div>
+            <div class="row border-b">
+                <div id="0" onclick="handleClick( '0');" class="col broder-r"></div>
+                <div id="1" onclick="handleClick( '1');" class="col broder-r"></div>
+                <div id="2" onclick="handleClick( '2');" class="col"></div>
+            </div>
+            <div class="row border-b">
+                <div id="3" onclick="handleClick( '3');" class="col broder-r"></div>
+                <div id="4" onclick="handleClick( '4');" class="col broder-r"></div>
+                <div id="5" onclick="handleClick( '5');" class="col"></div>
+            </div>
+            <div class="row">
+                <div id="6" onclick="handleClick( '6');" class="col broder-r"></div>
+                <div id="7" onclick="handleClick( '7');" class="col broder-r"></div>
+                <div id="8" onclick="handleClick( '8');" class="col"></div>
+            </div>
+            <br/>
+
+            <div class="centered card" id="card">
+                <ion-icon id="info" name="information-circle-outline"></ion-icon>
+                <div id="status">
+                    Bisher gewonnen: <b id="wincount"></b><b>Spiele</b>
+                </div>
+                <ion-icon onlick="reset();" id="restet" name="information-circle-outline"></ion-icon>
+        </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
